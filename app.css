@@ -1,5 +1,28 @@
 html, body {
+    min-height: 100%;
     text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(0, 38, 255), rgb(0, 255, 200));
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.title {
+  margin-top: 10px;
+  color: white;
+}
+
+.subtitle {
+  color: white;
+}
+
+button, input {
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+#blackBtn, #rainbowBtn, #eraseBtn, #clearBtn {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 :root {
@@ -11,10 +34,11 @@ html, body {
     display: grid;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    max-width: 600px;
-    height: 600px;
+    width: 525px;
+    height: 525px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 #squaresInput {
@@ -22,7 +46,7 @@ html, body {
 }
 
 .grid-item {
-  padding: 8px;
   border: 1px solid #ddd;
   text-align: center;
+  background-color: white;
 }
