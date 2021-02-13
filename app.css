@@ -1,9 +1,8 @@
 html, body {
     min-height: 100%;
     text-align: center;
-    background-image: linear-gradient(to bottom right, rgb(0, 38, 255), rgb(0, 255, 200));
+    background-color: blue;
     background-size: cover;
-    background-repeat: no-repeat;
     font-family: 'Yusei Magic', sans-serif;
 }
 
@@ -49,4 +48,11 @@ button, input {
   border: 1px solid #ddd;
   text-align: center;
   background-color: white;
+}
+
+@media (max-width: 600px ) {
+  #container {
+    width: 300px;
+    height: 300px;
+  }
 }
